@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>CSS3 - Neumorphic Social Icons</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
 <body>
-    <form action="" class="search-bar">
-        <input type="search" name="search" pattern=".*\S*" required>
-        <button class="search-btn" type="submit">
-            <span>Search</span>
-        </button>
-    </form>
+    <div class="center">
+        <div class="icons first">
+            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+            <li><a href="#"><span class="fab fa-github"></span></a></li>
+        </div>
+    </div>
+    <script>
+        $('.first li').click(function(){
+            $(this).toggleClass("shadow-1").siblings();
+            $(this).toggleClass("fill-color").siblings();
+        })
+    </script>
 </body>
-
 </html>
